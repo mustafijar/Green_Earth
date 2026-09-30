@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Register - Green Earth</title>
+
+
+  <!-- DaisyUI -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+
+  <!-- Tailwind CSS -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+</head>
+
+
+<body class="bg-[#F0FDF4] min-h-screen">
+
+
+  <!-- ================= Navbar ================= -->
+
+  <header class="bg-green-900 text-white shadow-md">
+
+    <div class="navbar px-5">
+
+
+      <!-- Logo -->
+
+      <div class="flex-1">
+
+        <a
+          href="index.html"
+          class="text-xl font-bold"
+        >
+
+          <i class="fa-solid fa-tree"></i>
+
+          Green Earth
+
+        </a>
+
+      </div>
+
+
+
+      <!-- Buttons -->
+
+      <div class="flex gap-2">
+
+
+        <!-- Home -->
+
+        <a
+          href="index.html"
+          class="btn bg-white text-green-800 hover:bg-gray-100"
+        >
+          Home
+        </a>
+
+
+        <!-- Login -->
+
+        <a
+          href="login.html"
+          class="btn bg-yellow-400 text-green-800 hover:bg-yellow-300"
+        >
+          Login
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ================= Register Section ================= -->
+
+  <section
+    class="min-h-[calc(100vh-80px)] flex items-center justify-center px-4 py-10"
+  >
+
+
+    <!-- Register Card -->
+
+    <div
+      class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md"
+    >
+
+
+      <!-- Heading -->
+
+      <div class="text-center mb-6">
+
+
+        <!-- Icon -->
+
+        <div class="text-green-700 text-5xl mb-3">
+
+          <i class="fa-solid fa-user-plus"></i>
+
+        </div>
+
+
+        <!-- Title -->
+
+        <h1 class="text-3xl font-bold text-green-800">
+
+          Create Account
+
+        </h1>
+
+
+        <!-- Description -->
+
+        <p class="text-gray-500 mt-2">
+
+          Join Green Earth today
+
+        </p>
+
+      </div>
+
+
+
+      <!-- ================= Register Form ================= -->
+
+      <form
+        id="registerForm"
+        class="space-y-5"
+      >
+
+
+        <!-- Name -->
+
+        <div>
+
+          <label
+            class="block font-semibold text-gray-700 mb-2"
+          >
+            Full Name
+          </label>
+
+
+          <div class="relative">
+
+            <i
+              class="fa-solid fa-user absolute left-4 top-4 text-gray-400"
+            ></i>
+
+
+            <input
+              id="registerName"
+              type="text"
+              placeholder="Enter your name"
+              required
+              class="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            >
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Email -->
+
+        <div>
+
+          <label
+            class="block font-semibold text-gray-700 mb-2"
+          >
+            Email
+          </label>
+
+
+          <div class="relative">
+
+            <i
+              class="fa-solid fa-envelope absolute left-4 top-4 text-gray-400"
+            ></i>
+
+
+            <input
+              id="registerEmail"
+              type="email"
+              placeholder="Enter your email"
+              required
+              class="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            >
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Password -->
+
+        <div>
+
+          <label
+            class="block font-semibold text-gray-700 mb-2"
+          >
+            Password
+          </label>
+
+
+          <div class="relative">
+
+            <i
+              class="fa-solid fa-lock absolute left-4 top-4 text-gray-400"
+            ></i>
+
+
+            <input
+              id="registerPassword"
+              type="password"
+              placeholder="Create a password"
+              required
+              minlength="6"
+              class="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            >
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Confirm Password -->
+
+        <div>
+
+          <label
+            class="block font-semibold text-gray-700 mb-2"
+          >
+            Confirm Password
+          </label>
+
+
+          <div class="relative">
+
+            <i
+              class="fa-solid fa-lock absolute left-4 top-4 text-gray-400"
+            ></i>
+
+
+            <input
+              id="confirmPassword"
+              type="password"
+              placeholder="Confirm your password"
+              required
+              minlength="6"
+              class="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            >
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Register Button -->
+
+        <button
+          type="submit"
+          class="w-full bg-[#15803D] text-white py-3 rounded-full font-bold hover:bg-green-800 transition"
+        >
+
+          <i class="fa-solid fa-user-plus mr-2"></i>
+
+          Register
+
+        </button>
+
+      </form>
+
+
+
+      <!-- Message -->
+
+      <p
+        id="registerMessage"
+        class="text-center mt-4 font-semibold"
+      ></p>
+
+
+
+      <!-- Login Link -->
+
+      <div class="text-center mt-6">
+
+        <p class="text-gray-600">
+
+          Already have an account?
+
+          <a
+            href="login.html"
+            class="text-green-700 font-bold hover:underline"
+          >
+            Login
+          </a>
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Register JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase.js"></script>
+
+  <script src="register.js"></script>
+
+</body>
+
+</html>
